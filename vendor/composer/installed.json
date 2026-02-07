@@ -1,0 +1,35 @@
+{
+    "packages": [
+        {
+            "name": "idsy/client",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "dist": {
+                "type": "path",
+                "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
+                "reference": "bef6f315badeb315388576b4771f37e603e58cb5"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "idsy\\client\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "ERIC PEREIRA",
+                    "email": "eric.pereira.swp@outlook.com"
+                }
+            ],
+            "description": "Cliente para conexão com as apis da idsy",
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            },
+            "install-path": "../idsy/client"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

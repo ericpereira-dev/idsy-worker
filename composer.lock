@@ -1,0 +1,47 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2cf9619befa22490e8368b114ab94f86",
+    "packages": [
+        {
+            "name": "idsy/client",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
+                "reference": "bef6f315badeb315388576b4771f37e603e58cb5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "idsy\\client\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "ERIC PEREIRA",
+                    "email": "eric.pereira.swp@outlook.com"
+                }
+            ],
+            "description": "Cliente para conexão com as apis da idsy",
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.0"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
