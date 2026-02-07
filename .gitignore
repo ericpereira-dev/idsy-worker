@@ -1,2 +1,3 @@
 src/core/Config.php
-src/storage/logs/
+src/storage/logs/call.txt
+src/storage/logs/exception.txt

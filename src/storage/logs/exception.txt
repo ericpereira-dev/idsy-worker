@@ -2,3 +2,5 @@
 Exception File: D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php
 Exception Line: 16
 -----------------------------------
+
+sd
