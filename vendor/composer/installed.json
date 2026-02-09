@@ -9,6 +9,9 @@
                 "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
                 "reference": "bef6f315badeb315388576b4771f37e603e58cb5"
             },
+            "require": {
+                "php": ">=8.0"
+            },
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -24,7 +27,7 @@
             ],
             "description": "Cliente para conexão com as apis da idsy",
             "transport-options": {
-                "symlink": true,
+                "symlink": false,
                 "relative": false
             },
             "install-path": "../idsy/client"

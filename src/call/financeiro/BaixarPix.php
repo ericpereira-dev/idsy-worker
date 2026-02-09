@@ -1,5 +1,16 @@
 <?php
 
+register_shutdown_function(function () {
+    $error = error_get_last();
+    if ($error && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR])) {
+        file_put_contents(...);
+    }
+});
+
+ini_set('log_errors', '1');
+ini_set('error_log', __DIR__ . '/php-error.log');
+error_reporting(E_ALL);
+
 include_once "../../../vendor/autoload.php";
 
 use idsy\worker\core\Config;

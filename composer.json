@@ -20,10 +20,10 @@
             "type": "path",
             "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
             "options": {
-                "symlink": true
+                "symlink": false
             }
         }
-    ],           
+    ],   
     "require": {
         "php": ">=8.0",
         "idsy/client": "*"        

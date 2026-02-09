@@ -1,0 +1,8 @@
+[08-Feb-2026 17:17:41 UTC] PHP Warning:  include_once(../../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php on line 14
+[08-Feb-2026 17:17:41 UTC] PHP Warning:  include_once(): Failed opening '../../vendor/autoload.php' for inclusion (include_path='.;C:\php\pear') in D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php on line 14
+[08-Feb-2026 17:17:41 UTC] PHP Fatal error:  Uncaught Error: Class "idsy\worker\dao\Log" not found in D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php:48
+Stack trace:
+#0 {main}
+  thrown in D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php on line 48
+[08-Feb-2026 17:17:41 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).
+[09-Feb-2026 11:11:08 UTC] Xdebug: [Step Debug] Time-out connecting to debugging client, waited: 200 ms. Tried: localhost:9003 (through xdebug.client_host/xdebug.client_port).

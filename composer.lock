@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cf9619befa22490e8368b114ab94f86",
+    "content-hash": "48d5c3eefbaefd2f9ed12d609b0e38fe",
     "packages": [
         {
             "name": "idsy/client",
@@ -13,6 +13,9 @@
                 "type": "path",
                 "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
                 "reference": "bef6f315badeb315388576b4771f37e603e58cb5"
+            },
+            "require": {
+                "php": ">=8.0"
             },
             "type": "library",
             "autoload": {
@@ -28,7 +31,7 @@
             ],
             "description": "Cliente para conexão com as apis da idsy",
             "transport-options": {
-                "symlink": true,
+                "symlink": false,
                 "relative": false
             }
         }

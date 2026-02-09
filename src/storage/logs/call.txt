@@ -1,54 +1,17 @@
-07/02/2026 19:48:37Result: BaixarPix
+08/02/2026 17:12:22Result: Exception: Class "idsy\client\services\control\Login" not found
 -----------------------------------
-07/02/2026 19:48:41Result: Acesso para BaixarPix(Login)
+08/02/2026 17:12:22Result: Exception File: D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php
 -----------------------------------
-07/02/2026 19:48:41Result: Chave: Enviado com sucesso
+08/02/2026 17:12:22Result: Exception Line: 26
 -----------------------------------
-07/02/2026 19:48:43Result: Acesso para BaixarPix(FINANCEIRO_BAIXAR_PIX_API)
+09/02/2026 11:11:05Result: Acesso para BaixarPix(Login)
 -----------------------------------
-07/02/2026 19:48:43Result: ResultCode: 401
+09/02/2026 11:11:05Result: Chave: 7808fbbd8d82aa2bb838a16fe8b6dc6f682688dc84e6db00a60db69996c6209fd07ba3b6059d3c58
 -----------------------------------
-07/02/2026 19:48:43Result: Result: 
-{"result":"Token n\u00e3o encontrado!"}
+09/02/2026 11:11:07Result: Acesso para BaixarPix(FINANCEIRO_BAIXAR_PIX_API)
 -----------------------------------
-07/02/2026 19:49:53Result: BaixarPix
+09/02/2026 11:11:07Result: ResultCode: 200
 -----------------------------------
-07/02/2026 19:49:55Result: Acesso para BaixarPix(Login)
------------------------------------
-07/02/2026 19:49:55Result: Chave: 12982a78d1b247e7117ea0d8a9a8f00ab2324687d990b2a3ff09b474cc2076fa88ef2e5412399a25
------------------------------------
-07/02/2026 19:49:58Result: Acesso para BaixarPix(FINANCEIRO_BAIXAR_PIX_API)
------------------------------------
-07/02/2026 19:49:58Result: ResultCode: 200
------------------------------------
-07/02/2026 19:49:58Result: Result: 
+09/02/2026 11:11:07Result: Result: 
 {"result":"OK"}
 -----------------------------------
-07/02/2026 19:50:56Result: Acesso para BaixarPix(Login)
------------------------------------
-07/02/2026 19:50:56Result: Chave: 8817cbaaa058e0f63cd1f0f5d4eed06cd7ec0bb7fbfaae48ef276aa9a367a3db73cc18be2ef42082
------------------------------------
-07/02/2026 19:50:58Result: Acesso para BaixarPix(FINANCEIRO_BAIXAR_PIX_API)
------------------------------------
-07/02/2026 19:50:58Result: ResultCode: 200
------------------------------------
-07/02/2026 19:50:58Result: Result: 
-{"result":"OK"}
------------------------------------
-07/02/2026 19:52:14Result: Exception: Call to a member function setURL() on null
------------------------------------
-07/02/2026 19:52:16Result: Exception File: D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php
------------------------------------
-07/02/2026 20:10:09Result: Acesso para BaixarPix(Login)
------------------------------------
-07/02/2026 20:10:09Result: Chave: d6e1ccc5ec2bb9740197285737163b870e8a874f3d460350060a7658476bfa292f0ef850150c4736
------------------------------------
-07/02/2026 20:10:10Result: Acesso para BaixarPix(FINANCEIRO_BAIXAR_PIX_API)
------------------------------------
-07/02/2026 20:10:10Result: ResultCode: 200
------------------------------------
-07/02/2026 20:10:10Result: Result: 
-{"result":"OK"}
------------------------------------
-
-tes

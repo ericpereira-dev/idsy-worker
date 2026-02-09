@@ -1,6 +1,0 @@
-07/02/2026 19:52:07Exception: Call to a member function setURL() on null
-Exception File: D:\Documents\Desenvolvimento\htdocs dev\idsy-worker\src\call\financeiro\BaixarPix.php
-Exception Line: 16
------------------------------------
-
-sd
