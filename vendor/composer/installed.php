@@ -11,8 +11,8 @@
     ),
     'versions' => array(
         'idsy/client' => array(
-            'pretty_version' => '1.0.0',
-            'version' => '1.0.0.0',
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
             'reference' => 'bef6f315badeb315388576b4771f37e603e58cb5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../idsy/client',

@@ -2,8 +2,8 @@
     "packages": [
         {
             "name": "idsy/client",
-            "version": "1.0.0",
-            "version_normalized": "1.0.0.0",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
             "dist": {
                 "type": "path",
                 "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",

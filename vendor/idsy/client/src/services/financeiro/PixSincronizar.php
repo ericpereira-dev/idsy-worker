@@ -3,7 +3,7 @@ namespace idsy\client\services\financeiro;
 
 use idsy\client\http\Request;
 
-class BaixarPix
+class PixSincronizar
 {
     public Request $request;
 
@@ -20,7 +20,7 @@ class BaixarPix
 
     public function post(string $authenticationData): void
     {   
-        $this->request->setController('FINANCEIRO_BAIXAR_PIX_API');
+        $this->request->setController('FINANCEIRO_PIX_SINCRONIZAR');
         $this->request->setPublicDataType('json');
         $this->request->setAuthenticationDataType('text');  
         $this->request->setAuthenticationData($authenticationData);        

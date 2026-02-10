@@ -2,7 +2,7 @@
 
 include_once "../vendor/autoload.php";
 
-use idsy\client\services\financeiro\BaixarPix;
+use idsy\client\services\financeiro\PixSincronizar;
 
 use idsy\client\services\control\login; 
 
@@ -19,7 +19,7 @@ $login->get();
 $data = json_decode($login->request->getResult(), true);
 $chave = $data['result'];
 
-$call = new BaixarPix();
+$call = new PixSincronizar();
 $call->request->setURL('http://localhost:8080/idsy-api/public_html/index.php');
 // $call->request->setURL('http://localhost:1880/idsy-api/public_html/index.php');
 // $call->post($login->request->getResult());
