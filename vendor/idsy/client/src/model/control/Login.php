@@ -1,5 +1,5 @@
 <?php // versão 01;   
-namespace idsy\client\model\control;
+namespace Idsy\Client\Model\Control;
 
 class Login
 {

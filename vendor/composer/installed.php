@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'idsy/worker',
-        'pretty_version' => '1.0.0',
-        'version' => '1.0.0.0',
+        'pretty_version' => '1.0.2',
+        'version' => '1.0.2.0',
         'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -11,17 +11,26 @@
     ),
     'versions' => array(
         'idsy/client' => array(
-            'pretty_version' => '1.0.1',
-            'version' => '1.0.1.0',
-            'reference' => 'bef6f315badeb315388576b4771f37e603e58cb5',
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'reference' => 'd6e891d6f54bbd6e7f3fc06207bc996c0ce3b3b2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../idsy/client',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'idsy/tools' => array(
+            'pretty_version' => '1.2.1',
+            'version' => '1.2.1.0',
+            'reference' => 'a5d40c620bb1d643b3140b01a98d61aa7320139b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../idsy/tools',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'idsy/worker' => array(
-            'pretty_version' => '1.0.0',
-            'version' => '1.0.0.0',
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
             'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',

@@ -2,7 +2,7 @@
 
 include_once "../vendor/autoload.php";
 
-use idsy\client\services\control\login; 
+use Idsy\Client\Services\Control\Login; 
 
 // login
 $login = new Login();

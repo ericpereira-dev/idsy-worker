@@ -2,12 +2,12 @@
     "packages": [
         {
             "name": "idsy/client",
-            "version": "1.0.1",
-            "version_normalized": "1.0.1.0",
+            "version": "1.0.2",
+            "version_normalized": "1.0.2.0",
             "dist": {
                 "type": "path",
                 "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
-                "reference": "bef6f315badeb315388576b4771f37e603e58cb5"
+                "reference": "d6e891d6f54bbd6e7f3fc06207bc996c0ce3b3b2"
             },
             "require": {
                 "php": ">=8.0"
@@ -16,7 +16,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "idsy\\client\\": "src/"
+                    "Idsy\\Client\\": "src/"
                 }
             },
             "authors": [
@@ -31,6 +31,38 @@
                 "relative": false
             },
             "install-path": "../idsy/client"
+        },
+        {
+            "name": "idsy/tools",
+            "version": "1.2.1",
+            "version_normalized": "1.2.1.0",
+            "dist": {
+                "type": "path",
+                "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-tools",
+                "reference": "a5d40c620bb1d643b3140b01a98d61aa7320139b"
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Idsy\\Tools\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "ERIC PEREIRA",
+                    "email": "eric.pereira.swp@outlook.com"
+                }
+            ],
+            "description": "Ferramentas",
+            "transport-options": {
+                "symlink": false,
+                "relative": false
+            },
+            "install-path": "../idsy/tools"
         }
     ],
     "dev": true,

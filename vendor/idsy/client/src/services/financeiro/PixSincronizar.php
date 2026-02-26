@@ -1,7 +1,7 @@
 <?php // versão 01;   
-namespace idsy\client\services\financeiro;
+namespace Idsy\Client\Services\Financeiro;
 
-use idsy\client\http\Request;
+use Idsy\Client\Http\Request;
 
 class PixSincronizar
 {

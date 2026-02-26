@@ -1,5 +1,4 @@
 <?php
-
 register_shutdown_function(function () {
     $error = error_get_last();
     if ($error && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR])) {
@@ -13,13 +12,13 @@ error_reporting(E_ALL);
 
 include_once "../../../vendor/autoload.php";
 
-use idsy\worker\core\Config;
+use Idsy\Worker\Config;
 
-use idsy\worker\dao\Log;
+use Idsy\Client\Services\Financeiro\PixSincronizar;
 
-use idsy\client\services\financeiro\BaixarPix;
+use Idsy\Client\Services\Control\Login; 
 
-use idsy\client\services\control\Login; 
+use Idsy\Tools\Create;
 
 try {
     // login
@@ -33,19 +32,21 @@ try {
 
     $data = json_decode($login->request->getResult(), true);
     $chave = $data['result'];
-    Log::set("Acesso para BaixarPix(Login)");
-    Log::set("Chave: " . $chave);
 
-    $call = new BaixarPix();
+    Create::Log(Config::storagePath(), 'Call', 'PixSincronizar');
+    Create::Log(Config::storagePath(), 'Call', 'Acesso para BaixarPix(Login)');    
+    Create::Log(Config::storagePath(), 'Call', 'Chave: ' . $chave);        
+
+    $call = new PixSincronizar();
     $call->request->setURL(Config::url());
     $call->post($chave);
 
-    Log::set("Acesso para BaixarPix(FINANCEIRO_BAIXAR_PIX_API)");
-    Log::set("ResultCode: " . $call->request->getResultCode());
-    Log::set("Result: " . $call->request->getResult());
+    Create::Log(Config::storagePath(), 'Call', 'Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)');
+    Create::Log(Config::storagePath(), 'Call', 'ResultCode: ' . $call->request->getResultCode());    
+    Create::Log(Config::storagePath(), 'Call', 'Result: ' . $call->request->getResult());        
 
 } catch (Throwable $e) {
-    Log::set("Exception: " . $e->getMessage());
-    Log::set("Exception File: " . $e->getFile());
-    Log::set("Exception Line: " . $e->getLine());
+    Create::Log(Config::storagePath(), 'error', 'Exception: ' . $e->getMessage());
+    Create::Log(Config::storagePath(), 'error', 'Exception File: ' . $e->getFile());    
+    Create::Log(Config::storagePath(), 'error', 'Exception Line: ' . $e->getLine());
 }    

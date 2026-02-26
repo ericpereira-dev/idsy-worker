@@ -1,7 +1,7 @@
 <?php // versão 01;   
-namespace idsy\client\http;
+namespace Idsy\Client\http;
 
-use idsy\client\model\http\Request as RequestModel;
+use Idsy\Client\Model\Http\Request as RequestModel;
 
 class Request extends RequestModel
 {

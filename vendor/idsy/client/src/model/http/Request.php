@@ -1,5 +1,5 @@
 <?php // versão 01;   
-namespace idsy\client\model\http;
+namespace Idsy\Client\Model\Http;
 
 class Request
 {

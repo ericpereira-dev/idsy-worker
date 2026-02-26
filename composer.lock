@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48d5c3eefbaefd2f9ed12d609b0e38fe",
+    "content-hash": "f0982dadf45553d673d7883dca785c5f",
     "packages": [
         {
             "name": "idsy/client",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "dist": {
                 "type": "path",
                 "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
-                "reference": "bef6f315badeb315388576b4771f37e603e58cb5"
+                "reference": "d6e891d6f54bbd6e7f3fc06207bc996c0ce3b3b2"
             },
             "require": {
                 "php": ">=8.0"
@@ -20,7 +20,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "idsy\\client\\": "src/"
+                    "Idsy\\Client\\": "src/"
                 }
             },
             "authors": [
@@ -30,6 +30,35 @@
                 }
             ],
             "description": "Cliente para conexão com as apis da idsy",
+            "transport-options": {
+                "symlink": false,
+                "relative": false
+            }
+        },
+        {
+            "name": "idsy/tools",
+            "version": "1.2.1",
+            "dist": {
+                "type": "path",
+                "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-tools",
+                "reference": "a5d40c620bb1d643b3140b01a98d61aa7320139b"
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Idsy\\Tools\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "ERIC PEREIRA",
+                    "email": "eric.pereira.swp@outlook.com"
+                }
+            ],
+            "description": "Ferramentas",
             "transport-options": {
                 "symlink": false,
                 "relative": false

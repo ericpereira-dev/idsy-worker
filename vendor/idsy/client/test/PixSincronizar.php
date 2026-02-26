@@ -2,9 +2,9 @@
 
 include_once "../vendor/autoload.php";
 
-use idsy\client\services\financeiro\PixSincronizar;
+use Idsy\Client\Services\Financeiro\PixSincronizar;
 
-use idsy\client\services\control\login; 
+use Idsy\Client\Services\Control\login; 
 
 // login
 $login = new Login();

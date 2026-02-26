@@ -1,8 +1,8 @@
 <?php // versão 01;   
-namespace idsy\client\services\control;
+namespace Idsy\Client\Services\Control;
 
-use idsy\client\http\Request;
-use idsy\client\model\control\Login as LoginModel;
+use Idsy\Client\Http\Request;
+use Idsy\Client\Model\Control\Login as LoginModel;
 
 class Login extends LoginModel
 {
