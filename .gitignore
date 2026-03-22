@@ -1,3 +1,6 @@
-src/core/Config.php
-src/storage/logs/call.txt
-src/storage/logs/exception.txt
+vendor/*
+composer.lock
+Config.php
+/src/Storage/*
+!/src/Storage/.gitignore
+public_html/php-error.log
