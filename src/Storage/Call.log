@@ -1,13 +1,298 @@
-26/02/2026 21:46:32Result: PixSincronizar
+23/03/2026 23:40:19
+PixSincronizar
 -----------------------------------
-26/02/2026 21:46:32Result: Acesso para BaixarPix(Login)
+23/03/2026 23:40:19
+Acesso para BaixarPix(Login)
 -----------------------------------
-26/02/2026 21:46:32Result: Chave: d7acad19b9842c5635cec735e7d4a66e1507ad03422fd5bfa7b8612b767003817191880edbbae3b2
+23/03/2026 23:40:19
+Chave: 06e85c883d6dac81b0f9f94ec4e2c9ac746f9cd26afe3227bdc2e95761be0b5568f72eca7eb21de9
 -----------------------------------
-26/02/2026 21:46:34Result: Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+23/03/2026 23:40:21
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
 -----------------------------------
-26/02/2026 21:46:34Result: ResultCode: 200
+23/03/2026 23:40:21
+ResultCode: 500
 -----------------------------------
-26/02/2026 21:46:34Result: Result: 
+23/03/2026 23:40:21
+Result: 
+{"result":"Txid na\u0303o encontrada em: {\"loc\":{\"id\":207700920,\"location\":\"https:\/\/spi-qrcode.bancointer.com.br\/spi\/pj\/v2\/daba2049fa4b4de5b31aad3b3deebde5\",\"criacao\":\"2026-03-22T13:01:08.428Z\",\"tipoCob\":\"cob\"},\"location\":\"https:\/\/spi-qrcode.bancointer.com.br\/spi\/pj\/v2\/daba2049fa4b4de5b31aad3b3deebde5\",\"valor\":{\"original\":\"5.00\",\"modalidadeAlteracao\":1},\"calendario\":{\"expiracao\":3600,\"criacao\":\"2026-03-22T13:01:08.517Z\"},\"txid\":\"TEST00000000000000000000000000004\",\"revisao\":0,\"status\":\"ATIVA\",\"pixCopiaECola\":\"00020101021226930014BR.GOV.BCB.PIX2571spi-qrcode.bancointer.com.br\/spi\/pj\/v2\/daba2049fa4b4de5b31aad3b3deebde552040000530398654045.005802BR5901*6007ITAPIRA61081397715562070503***6304C20B\",\"pix\":[],\"chave\":\"41044508000179\",\"solicitacaoPagador\":\"Registro Artistico\",\"infoAdicionais\":[{\"nome\":\"Obra\",\"valor\":\"Registro51\"},{\"nome\":\"Colecionador\",\"valor\":\"ERIC PEREIRA\"}]}"}
+-----------------------------------
+23/03/2026 23:44:04
+PixSincronizar
+-----------------------------------
+23/03/2026 23:44:04
+Acesso para BaixarPix(Login)
+-----------------------------------
+23/03/2026 23:44:05
+Chave: 1b094db16dfeb11e8bf3f9cb26d18aada288637de0fcac59e989e1bd70aff53e0392e3e379adbea7
+-----------------------------------
+23/03/2026 23:44:12
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+23/03/2026 23:44:12
+ResultCode: 500
+-----------------------------------
+23/03/2026 23:44:12
+Result: 
+{"result":"Txid na\u0303o encontrada em: {\"loc\":{\"id\":207700920,\"location\":\"https:\/\/spi-qrcode.bancointer.com.br\/spi\/pj\/v2\/daba2049fa4b4de5b31aad3b3deebde5\",\"criacao\":\"2026-03-22T13:01:08.428Z\",\"tipoCob\":\"cob\"},\"location\":\"https:\/\/spi-qrcode.bancointer.com.br\/spi\/pj\/v2\/daba2049fa4b4de5b31aad3b3deebde5\",\"valor\":{\"original\":\"5.00\",\"modalidadeAlteracao\":1},\"calendario\":{\"expiracao\":3600,\"criacao\":\"2026-03-22T13:01:08.517Z\"},\"txid\":\"TEST00000000000000000000000000004\",\"revisao\":0,\"status\":\"ATIVA\",\"pixCopiaECola\":\"00020101021226930014BR.GOV.BCB.PIX2571spi-qrcode.bancointer.com.br\/spi\/pj\/v2\/daba2049fa4b4de5b31aad3b3deebde552040000530398654045.005802BR5901*6007ITAPIRA61081397715562070503***6304C20B\",\"pix\":[],\"chave\":\"41044508000179\",\"solicitacaoPagador\":\"Registro Artistico\",\"infoAdicionais\":[{\"nome\":\"Obra\",\"valor\":\"Registro51\"},{\"nome\":\"Colecionador\",\"valor\":\"ERIC PEREIRA\"}]}"}
+-----------------------------------
+23/03/2026 23:44:41
+PixSincronizar
+-----------------------------------
+23/03/2026 23:44:41
+Acesso para BaixarPix(Login)
+-----------------------------------
+23/03/2026 23:44:41
+Chave: 
+-----------------------------------
+23/03/2026 23:44:57
+PixSincronizar
+-----------------------------------
+23/03/2026 23:44:57
+Acesso para BaixarPix(Login)
+-----------------------------------
+23/03/2026 23:44:57
+Chave: 
+-----------------------------------
+23/03/2026 23:45:09
+PixSincronizar
+-----------------------------------
+23/03/2026 23:45:09
+Acesso para BaixarPix(Login)
+-----------------------------------
+23/03/2026 23:45:09
+Chave: 
+-----------------------------------
+23/03/2026 23:45:15
+PixSincronizar
+-----------------------------------
+23/03/2026 23:45:15
+Acesso para BaixarPix(Login)
+-----------------------------------
+23/03/2026 23:45:15
+Chave: 99dbe3dacddd9efdb8ea6648a169bd9e2e18481efcfa1e88a45c574b60713a0dcf5853531b181175
+-----------------------------------
+23/03/2026 23:45:51
+PixSincronizar
+-----------------------------------
+23/03/2026 23:45:51
+Acesso para BaixarPix(Login)
+-----------------------------------
+23/03/2026 23:45:51
+Chave: e3aa1c898a5ad057da61842c893d6de53dc517f1b2263e6ae154ff1971890049b520699e33ed23c5
+-----------------------------------
+30/03/2026 11:01:12
+PixSincronizar
+-----------------------------------
+30/03/2026 11:01:12
+Acesso para BaixarPix(Login)
+-----------------------------------
+30/03/2026 11:01:12
+Chave: 62ad9d01ff8b27e95b29c066ce141a082ef5c7bf0bf3a48978e8f21c63d24717d36d1b0864f191e1
+-----------------------------------
+31/03/2026 17:44:40
+PixSincronizar
+-----------------------------------
+31/03/2026 17:44:40
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 17:44:40
+Chave: ad5512b70f62c5fd6f1af6190b433e3ed01e2b3b55d0530db7078fb85c1bdb043e568ddabb9f6907
+-----------------------------------
+31/03/2026 17:57:02
+PixSincronizar
+-----------------------------------
+31/03/2026 17:57:02
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 17:57:02
+Chave: f4da6fcb309680424e209b1e33a604330373d4150ecf4f7fa28acd5767ba41809ffd321e5248ee80
+-----------------------------------
+31/03/2026 22:11:36
+PixSincronizar
+-----------------------------------
+31/03/2026 22:11:36
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:11:36
+Chave: 730b3c93edf32342f20544674fe57ef2dce7b3e2da2f846adbbee9ca8b82cf3e36d283d8c9060bdd
+-----------------------------------
+31/03/2026 22:19:33
+PixSincronizar
+-----------------------------------
+31/03/2026 22:19:33
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:19:33
+Chave: c8fd2768bb33169a42ae7540040622877606b9aeb6036be63c668628978612ff881c16a8e711e9db
+-----------------------------------
+31/03/2026 22:19:50
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:19:50
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:19:50
+Result: 
+{"result":"OK"}
+-----------------------------------
+31/03/2026 22:19:53
+PixSincronizar
+-----------------------------------
+31/03/2026 22:19:53
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:19:53
+Chave: b9fa826fc57afa9aec7800c0882d4b94bb7f4e09750cc3cbd79ca1d265303fb62c9542a296364ac5
+-----------------------------------
+31/03/2026 22:23:00
+PixSincronizar
+-----------------------------------
+31/03/2026 22:23:00
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:23:00
+Chave: b999952ab42bd8ab6b2a0c1ed81e2bd543c5d9b4043f01c37bd01eb1f6d3981fe75e0719ff2cb5ee
+-----------------------------------
+31/03/2026 22:27:37
+PixSincronizar
+-----------------------------------
+31/03/2026 22:27:37
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:27:37
+Chave: b56d1fabdac3e2aa065c39b2489b4ae949633687f4aa168bc42f0bcaec956a9c91b6c482eafe5a74
+-----------------------------------
+31/03/2026 22:29:32
+PixSincronizar
+-----------------------------------
+31/03/2026 22:29:32
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:29:32
+Chave: 303d07e57709d472abb1d4b88d39a2614c8deadf8ab5d9bd8cdcbc45785495fd7be28918177deec3
+-----------------------------------
+31/03/2026 22:29:49
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:29:49
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:29:49
+Result: 
+{"result":"OK"}
+-----------------------------------
+31/03/2026 22:30:02
+PixSincronizar
+-----------------------------------
+31/03/2026 22:30:02
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:30:02
+Chave: f9645967cc8a54d14f93a59d24eac795c87bebf8e1ce8fe1a0eb056c0f8c17747b3c5fcec258b557
+-----------------------------------
+31/03/2026 22:30:27
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:30:27
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:30:27
+Result: 
+
+-----------------------------------
+31/03/2026 22:30:39
+PixSincronizar
+-----------------------------------
+31/03/2026 22:30:39
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:30:39
+Chave: e1e9f987dd1077308ebfa1ea0394175310346b68b3055c81f115f49a2abd9fe90ebb6bfbca01d5ef
+-----------------------------------
+31/03/2026 22:31:07
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:31:07
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:31:07
+Result: 
+{"result":"OK"}
+-----------------------------------
+31/03/2026 22:32:08
+PixSincronizar
+-----------------------------------
+31/03/2026 22:32:08
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:32:08
+Chave: 9fe2ab45040ee11525270bb7e3a5d632caba77f4877b6ae0c6a24489c3b575c559a8694abece57ea
+-----------------------------------
+31/03/2026 22:32:32
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:32:32
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:32:32
+Result: 
+{"result":"OK"}
+-----------------------------------
+31/03/2026 22:36:26
+PixSincronizar
+-----------------------------------
+31/03/2026 22:36:26
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:36:26
+Chave: eb2f562dcb49ece39551743e922235fd5cbccc5f84b28e67dac3802a6dc50b12b3010df4a0a937b7
+-----------------------------------
+31/03/2026 22:36:28
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:36:28
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:36:28
+Result: 
+{"result":"OK"}
+-----------------------------------
+31/03/2026 22:38:01
+PixSincronizar
+-----------------------------------
+31/03/2026 22:38:01
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:38:01
+Chave: 0ac2cf5cff8664e06eb8b554fd337b3c607bce16afae31681987fca8fe073c04782985c77c0b22ad
+-----------------------------------
+31/03/2026 22:38:03
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:38:03
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:38:03
+Result: 
+{"result":"OK"}
+-----------------------------------
+31/03/2026 22:40:25
+PixSincronizar
+-----------------------------------
+31/03/2026 22:40:25
+Acesso para BaixarPix(Login)
+-----------------------------------
+31/03/2026 22:40:25
+Chave: d3bffc94061daf8a1e55df994d519e3a935af2af8a485a0ef914c8f42f9d9d16c568f9bda888febd
+-----------------------------------
+31/03/2026 22:40:46
+Acesso para PixSincronizar(FINANCEIRO_PIX_SINCRONIZAR)
+-----------------------------------
+31/03/2026 22:40:46
+ResultCode: 200
+-----------------------------------
+31/03/2026 22:40:46
+Result: 
 {"result":"OK"}
 -----------------------------------

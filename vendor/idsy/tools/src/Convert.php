@@ -1,7 +1,9 @@
 <?php
+
 namespace Idsy\Tools;
 
-class Convert {    
+class Convert
+{
     public static function onlyNumber(string $value): null|int
     {
         if ($value == 'NULL' or ($value == 'null')) {
@@ -10,8 +12,8 @@ class Convert {
             $result = preg_replace('/[^0-9]/', '', $value);
             return intval($result);
         }
-    }   
-    
+    }
+
     public static function onlyDigits(string $value): string
     {
         return preg_replace('/\D+/', '', $value);
@@ -27,8 +29,8 @@ class Convert {
         } else {
             return 'F';
         }
-    } 
-    
+    }
+
     public static function dataToType(string $value, $type)
     {
         if (strtoupper($type) == 'JSON') {
@@ -57,8 +59,8 @@ class Convert {
         }
 
         return floatval($valor);
-    }    
-    
+    }
+
     static function imageJsonToJpg(string $imgBase64, int $maxSize): string
     {
         if (isset($imgBase64) == false) {
@@ -119,5 +121,58 @@ class Convert {
         imagedestroy($srcImg);
         imagedestroy($dstImg);
         return $base64;
-    }     
+    }
+
+    static function maskEmail(string $email): string
+    {
+        $parts = explode('@', $email);
+
+        if (count($parts) !== 2) {
+            return $email; // não é um e-mail válido
+        }
+
+        $name = $parts[0];
+        $domain = $parts[1];
+
+        $length = strlen($name);
+
+        if ($length <= 2) {
+            $masked = str_repeat('*', $length);
+        } else {
+            $start = substr($name, 0, 2);
+            $end = substr($name, -2);
+            $masked = $start . str_repeat('*', $length - 4) . $end;
+        }
+
+        return $masked . '@' . $domain;
+    }
+
+    public static function arrayToValue(array $array, string $chave): mixed
+    {
+        foreach ($array as $ch => $valor) {
+            if (strtoupper($ch) === strtoupper($chave)) {
+                return $valor;
+            }
+
+            if (is_array($valor)) {
+                $resultado = self::arrayToValue($valor, $chave);
+                if ($resultado !== null) {
+                    return $resultado;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    static function jsonToValue(string $json, string $chave): mixed
+    {
+        $dados = json_decode($json, true);
+
+        if (!is_array($dados)) {
+            return null;
+        }
+
+        return self::arrayToValue($dados, $chave);
+    }
 }

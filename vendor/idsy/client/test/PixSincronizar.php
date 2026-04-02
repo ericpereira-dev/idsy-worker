@@ -9,8 +9,7 @@ use Idsy\Client\Services\Control\login;
 // login
 $login = new Login();
 $login->request->setURL('http://localhost:8080/idsy-api/public_html/index.php');
-// $login->request->setURL('http://localhost:1880/idsy-api/public_html/index.php');
-$login->setLogin('worker');
+$login->setLogin('test');
 $login->setPassword('123456');
 $login->setTeam('control');
 $login->setKey('');
@@ -21,9 +20,6 @@ $chave = $data['result'];
 
 $call = new PixSincronizar();
 $call->request->setURL('http://localhost:8080/idsy-api/public_html/index.php');
-// $call->request->setURL('http://localhost:1880/idsy-api/public_html/index.php');
-// $call->post($login->request->getResult());
-// $call->post('2c08c376eadc810498a5d289d5cfe721c80d97dcdfd4b5c596e117a65a806491048c28cde5eab606');
 $call->post($chave);
 
 echo $chave;

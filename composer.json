@@ -2,6 +2,7 @@
     "name": "idsy/worker",
     "version": "1.0.2",    
     "description": "Worker para conexão com as apis da idsy",    
+    "type": "project",
     "autoload": {
         "psr-4": {
             "Idsy\\Worker\\": "src/"
@@ -9,31 +10,11 @@
     },
     "authors": [
         {
-            "name": "ERIC PEREIRA",
-            "email": "eric.pereira.swp@outlook.com"
+            "name": "Eric Pereira"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true, 
-    "repositories": [
-        {
-            "type": "path",
-            "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-client",
-            "options": {
-                "symlink": false
-            }
-        },
-        {
-            "type": "path",
-            "url": "D:/Documents/Desenvolvimento/htdocs dev/idsy-package/idsy-tools",
-            "options": {
-                "symlink": false
-            }
-        }        
-    ],   
     "require": {
         "php": ">=8.0",
-        "idsy/client": "*",
-        "idsy/tools": "*"        
+        "idsy/client": "*"
     }
 }

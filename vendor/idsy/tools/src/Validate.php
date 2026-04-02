@@ -1,8 +1,6 @@
 <?php
 namespace Idsy\Tools;
 
-use Idsy\Tools\Generator;
-
 class Validate {
     static function base64(string $img): bool
     {
@@ -21,6 +19,12 @@ class Validate {
         }
     }
 
+    /**
+     * Validate an email address.
+     *
+     * @param string $value Email address.
+     * @return bool True if the email address is valid, false otherwise.
+     */
     static function email(string $value): bool
     {
         return filter_var($value, FILTER_VALIDATE_EMAIL) !== false;
@@ -37,19 +41,19 @@ class Validate {
         return $d && $d->format($format) === $date;
     }
 
-    static function cpf(string $document): array
+    static function cpf(string $document): bool
     {
         // Remove caracteres não numéricos
         $document = Convert::onlyDigits($document);
 
         // Verifica se tem 11 dígitos
         if (strlen($document) != 11) {
-            return [false, ''];
+            return false;
         }
 
         // Verifica se todos os dígitos são iguais
         if (preg_match('/^(.)\1{10}$/', $document)) {
-            return [false, ''];
+            return false;
         }
 
         // Calcula o primeiro dígito verificador
@@ -70,37 +74,25 @@ class Validate {
 
         // Verifica se os dígitos calculados conferem com os dígitos informados
         if ($digit1 == (int)$document[9] && $digit2 == (int)$document[10]) {
-            return [
-                "valido" => true,
-                "documento" => $document
-            ];
+            return true;
         } else {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return true;
         }
     }
 
-    static function cnpj(string $document): array
+    static function cnpj(string $document): bool
     {
         // Remove caracteres não numéricos
         $document = Convert::onlyDigits($document);
 
         // Verifica se tem 14 dígitos
         if (strlen($document) != 14) {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
 
         // Verifica se todos os dígitos são iguais
         if (preg_match('/^(.)\1{13}$/', $document)) {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
 
         // Calcula o primeiro dígito verificador
@@ -123,19 +115,13 @@ class Validate {
 
         // Verifica se os dígitos calculados conferem com os dígitos informados
         if ($digit1 == (int)$document[12] && $digit2 == (int)$document[13]) {
-            return [
-                "valido" => true,
-                "documento" => $document
-            ];
+            return true;
         } else {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
     }
 
-    static function rg(string $document): array
+    static function rg(string $document): bool
     {
         // Remove caracteres não numéricos
         $document = Convert::onlyDigits($document);
@@ -143,27 +129,18 @@ class Validate {
         // Verifica se tem entre 5 e 14 dígitos
         $length = strlen($document);
         if ($length < 5 || $length > 14) {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
 
         // Verifica se todos os dígitos são iguais
         if (preg_match('/^(.)\1{' . ($length - 1) . '}$/', $document)) {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
 
-        return [
-            "valido" => true,
-            "documento" => $document
-        ];
+        return true;
     }
 
-    static function telefone(string $value): array
+    static function telefone(string $value): bool
     {
         // Remove caracteres não numéricos
         $document = Convert::onlyDigits($value);
@@ -171,54 +148,36 @@ class Validate {
         // Verifica se tem entre 10 e 11 dígitos
         $length = strlen($value);
         if ($length < 10 || $length > 11) {
-            return [
-                "valido" => false,
-                "documento" => $value
-            ];
+            return false;
         }
 
         // Verifica se todos os dígitos são iguais
         if (preg_match('/^(.)\1{' . ($length - 1) . '}$/', $value)) {
-            return [
-                "valido" => false,
-                "value" => $value
-            ];
+            return false;
         }
 
-        return [
-            "valido" => true,
-            "value" => $value
-        ];
+        return true;
     }
 
-    static function cep(string $value): array
+    static function cep(string $value): bool
     {
         // Remove caracteres não numéricos
         $value = Convert::onlyDigits($value);
 
         // Verifica se tem 8 dígitos
         if (strlen($value) != 8) {
-            return [
-                "valido" => false,
-                "value" => $value
-            ];
+            return false;
         }
 
         // Verifica se todos os dígitos são iguais
         if (preg_match('/^(.)\1{7}$/', $value)) {
-            return [
-                "valido" => false,
-                "value" => $value
-            ];
+            return false;
         }
 
-        return [
-            "valido" => true,
-            "value" => $value
-        ];
+        return true;
     }
 
-    static function passaportBR(string $document): array
+    static function passaportBR(string $document): bool
     {
         // Remove espaços em branco
         $document = trim($document);
@@ -226,54 +185,39 @@ class Validate {
         // Verifica se tem entre 5 e 20 caracteres alfanuméricos
         $length = strlen($document);
         if ($length < 5 || $length > 20) {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
 
         // Verifica se contém apenas caracteres alfanuméricos
         if (!preg_match('/^[a-zA-Z0-9]+$/', $document)) {
-            return [
-                "valido" => false,
-                "documento" => $document
-            ];
+            return false;
         }
 
-        return [
-            "valido" => true,
-            "documento" => $document
-        ];
+        return true;
     }
 
-    static function passaportInternacional(string $document): array
+    static function passaportInternacional(string $document): bool
     {
         // Regex: 5 a 9 caracteres, letras e números apenas
         if (preg_match('/^[A-Z0-9]{5,9}$/', $document)) {
-            return [
-                "valido" => true,
-                "documento" => $document
-            ];
+            return false;
         }
 
-        return [
-            "valido" => true,
-            "documento" => $document
-        ];
+        return true;
     }
 
-    static function passaport(string $document, string $type): array
+    static function passaport(string $document, string $type): bool
     {
         $result = Validate::passaportBR($document, $type);
 
-        if ($result['valida'] == false) {
+        if ($result == false) {
             $result = Validate::passaportInternacional($document, $type);
         }
 
         return $result;
     }
 
-    static function documento(string $documento, string $type): array
+    static function documento(string $documento, string $type): bool
     {
         if ($type == 'CPF') {
             return Validate::cpf($documento);
@@ -284,7 +228,7 @@ class Validate {
         } else if (strtoupper($type) == 'PASSAPORTE') {
             return Validate::passaport($documento, $type);
         } else {
-            return [false, ''];
+            return false;
         }
     }
 
@@ -301,4 +245,16 @@ class Validate {
         json_decode($string);
         return (json_last_error() === JSON_ERROR_NONE);
     }     
+
+        public static function getIp()
+        {
+            if ((empty($_SERVER['REMOTE_ADDR']) == false) && (isset($_SERVER['REMOTE_ADDR']) == true))
+            {
+                return $_SERVER['REMOTE_ADDR'];
+            }
+            else
+            {
+                throw new \Exception('IP do cliente não encontrado!');        
+            }   
+        }      
 }
